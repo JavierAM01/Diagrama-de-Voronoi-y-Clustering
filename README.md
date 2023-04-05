@@ -2,6 +2,7 @@
 
 ## Índice
 
+ - [Enunciado](#id00)
  - [Introducción](#id0)
  - [Material usado](#id1)
  - [Resultados y conclusiones](#id2)
@@ -9,6 +10,20 @@
      - [Pregunta 2](#id2.2)
      - [Pregunta 3](#id2.3)
 
+## Enunciado <a name=id00> </a>
+
+Determina el número ideal de Grados de nuestra Facultad de Matemáticas (sistema A) a partir
+del número óptimo de clusters o vecindades de Voronói:
+ 1) Obtén el coeficiente $\bar{s}$ de A para diferente número de vecindades $k\in {2, 3, ..., 15}$ usando el
+algoritmo KMeans. Muestra en una gráfica el valor de $\bar{s}$ en función de $k$ y decide con ello cuál
+es el número óptimo de vecindades. En una segunda gráfica, muestra la clasificación (clusters)
+resulante con diferentes colores y representa el diagrama de Voronói en esa misma gráfica.
+ 2) Obtén el coeficiente $\bar{s}$ para el mismo sistema A usando ahora el algoritmo DBSCAN con la
+métrica *euclidean* y luego con *manhattan*, En este caso, el parámetro que debemos explorar
+es el umbral de distancia $\varepsilon \in (0.1, 0.4)$, fijando el número de elementos mínimo en $n_0 = 10$.
+Comparad gráficamente con el resultado del apartado anterior.
+ 3) ¿De qué Grado diríamos que son las personas con coordenadas $a = (0, 0)$ y $b = (0, -1)$?
+Comprueba tu respuesta con la función kmeans.predict.
 
 
 ## Introducción <a name=id0> </a>
