@@ -73,9 +73,12 @@ Por último en la figura (2.c) se puede observar la nube de puntos separados en 
 sin crear ninguna separación). Donde $k = 1$ es el valor óptimo encontrado por el algoritmo DBSCAN.
 
 <div style="text-align:center;">
-  <image src="/images/p2_1.png" style="width:33%; height:8cm;" alt="Gráfica del valor de épsilon frente al valor de   Silouette">
-  <image src="/images/p2_2.png" style="width:33%; height:8cm;" alt="Comparación entre DBSCAN y K-Means">
-  <image src="/images/p2_3.png" style="width:33%; height:8cm;" alt="Conjunto de puntos separado en clusters - DBSCAN">
+  <image src="/images/p2_1.png" style="width:48%; height:8cm;" alt="Gráfica del valor de épsilon frente al valor de   Silouette">
+  <image src="/images/p2_2.png" style="width:48%; height:8cm;" alt="Comparación entre DBSCAN y K-Means">
+</div>
+
+<div style="text-align:center;">
+  <image src="/images/p2_3.png" style="width:48%; height:8cm;" alt="Conjunto de puntos separado en clusters - DBSCAN">
 </div>
 
 A raíz de los resultados del DBSCAN comentados anteriormente, he realizado una ampliación en el estudio, aumentando los intervalos de
