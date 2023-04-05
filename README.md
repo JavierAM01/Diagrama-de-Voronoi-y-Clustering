@@ -36,8 +36,11 @@ Podemos observar en la figura (1.a) que para valores de $k\in \{2,3,\dots, 15\}$
 disminuye el valor de Silouette, $\bar{s}$. Por otro lado en la figura (1.b) se puede observar una visualización del conjunto de puntos dividido
 en tres secciones, según el algoritmo de K-Means.
 	
-{images/p1_1} {Valor de Silouette según el número de clusters}
-{images/p1_2} {Conjunto de puntos separado en clusters - K Means}
+
+<div style="text-align:center;">
+  <image src="/images/p1_1.png" style="width:48%; height:8cm;" alt="Valor de Silouette según el número de clusters">
+  <image src="/images/p1_2.png" style="width:48%; height:8cm;" alt="Conjunto de puntos separado en clusters - K Means">
+</div>
 
 ### Pregunta 2 <a name=id2.2> </a>
 	
@@ -53,18 +56,26 @@ por lo que el intervalo en el que se ha buscado el épsilon también podría mej
 	
 Por último en la figura (2.c) se puede observar la nube de puntos separados en $k=1$ clusters (es decir, todos pertenecen al mismo grupo
 sin crear ninguna separación). Donde $k = 1$ es el valor óptimo encontrado por el algoritmo DBSCAN.
-	
-{images/p2_1} {Gráfica del valor de épsilon frente al valor de   Silouette}
-{images/p2_2} {Comparación entre DBSCAN y K-Means}
-{images/p2_3} {Conjunto de puntos separado en clusters - DBSCAN}
+
+<div style="text-align:center;">
+  <image src="/images/p2_1.png" style="width:33%; height:8cm;" alt="Gráfica del valor de épsilon frente al valor de   Silouette">
+  <image src="/images/p2_2.png" style="width:33%; height:8cm;" alt="Comparación entre DBSCAN y K-Means">
+  <image src="/images/p2_3.png" style="width:33%; height:8cm;" alt="Conjunto de puntos separado en clusters - DBSCAN">
+</div>
 
 A raíz de los resultados del DBSCAN comentados anteriormente, he realizado una ampliación en el estudio, aumentando los intervalos de
 busqueda de los parámetros óptimos: $\varepsilon \in [0'1,0'6]$ y $n_0 \in \{10,20,30,40,50\}$. Como se puede observar, tanto para la
 métrica euclediana como para la manhatan obtenemos como valor óptimo el mismo número de clusters que en el K-Means. 
-	
-{images/pruebas_1} {DBSCAN - Estudio extra con manhantan}
-{images/pruebas_2} {DBSCAN - Estudio extra con euclidia}
 
+<div style="text-align:center;">
+  <image src="/images/pruebas_1.png" style="width:100%; height:8cm;" alt="DBSCAN - Estudio extra con manhantan">
+</div>
+
+<div style="text-align:center;">
+  <image src="/images/pruebas_2.png" style="width:100%; height:8cm;" alt="DBSCAN - Estudio extra con euclidia">
+</div>
+  
+  
 Los resultados óptimos se dan para $\varepsilon \in [0'1, 0'4]$, es decir, el intervalo de estudio inicial de $\varepsilon$ era bueno;
 sin embargo, el $n_0$ óptimo se da en ambos casos para $n_0 = 50$ (este está el extremo del intervalo de estudio por lo podría ser mejorable).
 Por lo tanto, nuestra hipótesis de que $n_0 = 10$ podría ser muy pequeño parece ser correcta.
@@ -74,8 +85,10 @@ Por lo tanto, nuestra hipótesis de que $n_0 = 10$ podría ser muy pequeño pare
 Como se puede observar en la figura (4) el $(0,0)$ diríamos que pertenece al grupo azul, mientras que el $(0,-1)$ a simple vista no es fácil
 distinguir entre el grupo rojo y blanco. Con la función predict de K-Means observamos como efectivamente el $(0,0)$ lo clasifica en el grupo azul,
 mientras que el $(0,-1)$ lo clasifica en el blanco.
-	
-{images/p3_1} {Predicción de 2 nuevos puntos - K Means}
+
+<div style="text-align:center;">
+  <image src="/images/p3_1.png" style="width:50%; height:10cm;" alt="Predicción de 2 nuevos puntos - K Means">
+</div>
 
 
 
